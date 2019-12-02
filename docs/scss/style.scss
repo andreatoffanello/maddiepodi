@@ -219,8 +219,9 @@ li {
         top: auto;
         bottom: 0;
         left: 0;
-        width: 100%;
+        width: calc(100% - 32px);
         height: 64px;
+        grid-gap: 16px;
     }
 
     a {
@@ -256,6 +257,11 @@ li {
     grid-template-columns: 1fr;
     grid-template-rows: 75vh;
 
+    @include breakpoint(mobile) {
+        grid-template-rows: auto;
+    }
+
+
     .bkg,
     .h_content {
         grid-area: 1/1/2/2;
@@ -275,6 +281,7 @@ li {
 
         @include breakpoint(mobile) {
             height: calc(100% - 128px);
+            padding: 64px 16px;
         }
 
         h1 {
@@ -386,11 +393,15 @@ li {
         h2 {
             position: absolute;
             top: -40px;
-            right: 64px;
+            right: 48px;
             font-size: 64px;
             margin: 0;
             z-index: 1;
             color: $white;
+
+            @include breakpoint(mobile) {
+                font-size: 48px;
+            }
 
             span {
                 z-index: 1;

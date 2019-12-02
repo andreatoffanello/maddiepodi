@@ -181,8 +181,9 @@ li {
     top: auto;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: calc(100% - 32px);
     height: 64px;
+    grid-gap: 16px;
   }
 }
 
@@ -213,6 +214,12 @@ li {
   grid-template-rows: 75vh;
 }
 
+@media (max-width: 768px) {
+  .heading {
+    grid-template-rows: auto;
+  }
+}
+
 .heading .bkg,
 .heading .h_content {
   grid-area: 1/1/2/2;
@@ -235,6 +242,7 @@ li {
 @media (max-width: 768px) {
   .heading .h_content {
     height: calc(100% - 128px);
+    padding: 64px 16px;
   }
 }
 
@@ -352,11 +360,17 @@ li {
 .s_box .box_content h2 {
   position: absolute;
   top: -40px;
-  right: 64px;
+  right: 48px;
   font-size: 64px;
   margin: 0;
   z-index: 1;
   color: #fafafa;
+}
+
+@media (max-width: 768px) {
+  .s_box .box_content h2 {
+    font-size: 48px;
+  }
 }
 
 .s_box .box_content h2 span {
