@@ -563,6 +563,12 @@ footer {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  footer {
+    padding-bottom: 64px;
+  }
+}
+
 footer span {
   opacity: .2;
   font-size: 14px;
