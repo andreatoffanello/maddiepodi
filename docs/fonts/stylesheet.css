@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'IBM Selectric Manifold';
+    src: url('IBMSelectricManifold-Regular.woff2') format('woff2'),
+        url('IBMSelectricManifold-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBM Selectric';
+    src: url('IBMSelectricLight-Regular.woff2') format('woff2'),
+        url('IBMSelectricLight-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'zai Soft Italic Typewriter';
+    src: url('zaiSoftItalicTypewriter.woff2') format('woff2'),
+        url('zaiSoftItalicTypewriter.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'IBM Selectric';
+    src: url('IBMSelectricLight-Italic.woff2') format('woff2'),
+        url('IBMSelectricLight-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
