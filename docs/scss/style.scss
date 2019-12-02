@@ -563,6 +563,21 @@ strong {
     }
 }
 
+footer {
+    text-align: center;
+
+    span {
+        opacity: .2;
+        font-size: 14px;
+        transition: .3s $ease;
+
+        &:hover {
+            opacity: 1;
+            transition: .3s $ease;
+        }
+    }
+}
+
 #cerimonia,
 #ricevimento,
 #regalo,

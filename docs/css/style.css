@@ -559,6 +559,25 @@ strong {
   color: #fafafa;
 }
 
+footer {
+  text-align: center;
+}
+
+footer span {
+  opacity: .2;
+  font-size: 14px;
+  -webkit-transition: 0.3s cubic-bezier(0.3, 0, 0, 1);
+  -o-transition: 0.3s cubic-bezier(0.3, 0, 0, 1);
+  transition: 0.3s cubic-bezier(0.3, 0, 0, 1);
+}
+
+footer span:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s cubic-bezier(0.3, 0, 0, 1);
+  -o-transition: 0.3s cubic-bezier(0.3, 0, 0, 1);
+  transition: 0.3s cubic-bezier(0.3, 0, 0, 1);
+}
+
 #cerimonia,
 #ricevimento,
 #regalo,
