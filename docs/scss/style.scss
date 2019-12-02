@@ -568,4 +568,8 @@ strong {
 #regalo,
 #rsvp {
     padding-top: 128px;
+
+    @include breakpoint(mobile) {
+        padding-top: 64px;
+    }
 }

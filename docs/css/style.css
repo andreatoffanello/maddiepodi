@@ -565,3 +565,12 @@ strong {
 #rsvp {
   padding-top: 128px;
 }
+
+@media (max-width: 768px) {
+  #cerimonia,
+  #ricevimento,
+  #regalo,
+  #rsvp {
+    padding-top: 64px;
+  }
+}
