@@ -203,6 +203,20 @@ li {
     box-shadow: 0px 5px 20px rgba(0,0,0,.05);
 }
 
+@keyframes wavepoint{
+
+    0% {
+        transform: scale(.8);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.8);
+    }
+}
+
+
 
 .nav {
     position: sticky;
@@ -230,13 +244,40 @@ li {
         grid-template-columns: 1fr;
         grid-gap: 8px;
         place-items: center;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: "";
+            height: 0;
+            width: 0;
+            transition: .2s $easeOut;
+            border-radius: 50%;
+            background: $main;
+            z-index: 0;
+            opacity: 0;
+        }
 
         .logo {
             max-height: 32px;
+            position: relative;
         }
 
         .nav_icon {
             height: 24px;
+            position: relative;
+        }
+
+        &.selected {
+
+            &:before {
+                height: 48px;
+                width: 48px;
+                transition: .2s $easeOut;
+                opacity: .3;
+                animation: wavepoint 1.5s infinite ease-in-out;
+
+            }
         }
     }
 }
